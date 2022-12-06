@@ -15,6 +15,6 @@ def load_data() -> [Dict[str, User], Dict[str, List[Experience]]]:
     """
     print("data loaded")
     return [
-        generate_user_map(load_users_data("ausers.tsv")),
+        generate_user_map(load_users_data("users.tsv")),
         generate_object_map_array(load_experience_data("experience.tsv")),
     ]
