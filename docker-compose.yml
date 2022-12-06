@@ -1,0 +1,12 @@
+version: "3.11"
+
+
+services:
+  api:
+    build: ./
+    ports:
+      - 8081:8081
+    volumes:
+      - "./experience.tsv:/app/experience.tsv"
+      - "./users.tsv:/app/users.tsv"
+      - "./candidate_api:/app/candidate_api"
